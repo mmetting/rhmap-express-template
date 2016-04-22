@@ -4,7 +4,10 @@ var express = require('express')
   , mbaasApi = require('fh-mbaas-api')
   , mbaasExpress = mbaasApi.mbaasExpress()
   , app = module.exports = express()
-  , counters = require('lib/middleware/request-counter');
+  , counters = require('lib/middleware/request-counter')
+  , log = require('fh-bunyan').getLogger(__filename);
+
+log.info('starting application');
 
 // Add our request counting middleware before all other routes
 app.use(counters.middleware);
@@ -17,6 +20,7 @@ app.use('/mbaas', mbaasExpress.mbaas);
 app.use(mbaasExpress.fhmiddleware());
 
 // Bind our routes
+log.info('binding routes');
 require('lib/routes/users')(app);
 require('lib/routes/hello')(app);
 
@@ -29,5 +33,5 @@ app.use(mbaasExpress.errorHandler());
 var port = process.env.FH_PORT || process.env.VCAP_APP_PORT || 8001;
 
 app.listen(port, function() {
-  console.log('App started at: ' + new Date() + ' on port: ' + port);
+  log.info('app started on port: %s', port);
 });
