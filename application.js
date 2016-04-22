@@ -18,6 +18,7 @@ app.use(mbaasExpress.fhmiddleware());
 
 // Bind our routes
 require('lib/routes/users')(app);
+require('lib/routes/hello')(app);
 
 // Expose our counters
 app.use('/stats', counters.router);
