@@ -11,6 +11,10 @@ The API exposes the following endpoints:
 #### GET /users/:id
 Get a user with the given ID, e.g GET http://127.0.0.1:8001/users/0.
 
+#### POST /users/:id
+Create a new user with the given ID, e.g POST http://127.0.0.1:8001/users/0,
+and passing a body of type application/json.
+
 #### PUT /users/:id
 Update a user with the given ID, e.g PUT http://127.0.0.1:8001/users/0 and
 pass in a JSON body with header "Content-Type: application/json".
@@ -25,7 +29,7 @@ pass in a JSON body with header "Content-Type: application/json".
 For example, try this cURL from a terminal:
 
 ```
-curl -X PUT --data '{"lastname":"linux"}' -H "Content-Type:application/json" http://127.0.0.1:8001/users/0
+curl -X POST --data '{"lastname":"linux"}' -H "Content-Type:application/json" http://127.0.0.1:8001/users/0
 ```
 
 And now call this to see the change was saved:
