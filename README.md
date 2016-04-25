@@ -63,8 +63,8 @@ npm run-script {SCRIPT_NAME}
 You can view the _package.json_ to see the scripts in detail , but here's a
 breakdown of each.
 
-##### serve
-Start the application.
+##### start
+Start the application, e.g _npm start_
 
 ##### jshint
 Check code quality using JSHint.
