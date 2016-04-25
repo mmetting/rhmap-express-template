@@ -87,7 +87,7 @@ Execute the unit tests.
 
 ## Starting the Server
 This template contains an entry point, _application.js_ that can be started by
-typing _npm run-script serve_. You can also start the application using
+typing _npm start_. You can also start the application using
 _node application.js_, but this will not set the NODE_PATH environment
 variable and will therefore cause _require_ paths to be deemed incorrect.
 
