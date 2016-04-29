@@ -2,7 +2,7 @@
   "name": "rhmap-express-template",
   "version": "0.1.0",
   "description": "A Red Hat Mobile Cloud Application template that uses express.",
-  "main": "index.js",
+  "main": "application.js",
   "scripts": {
     "start": "env NODE_PATH=. FH_USE_LOCAL_DB=true nodemon application.js | bunyan",
     "jshint": "jshint lib/**/*.js",
