@@ -23,6 +23,7 @@ app.use(mbaasExpress.fhmiddleware());
 log.info('binding routes');
 require('lib/routes/users')(app);
 require('lib/routes/hello')(app);
+require('lib/routes/error-example')(app);
 
 // Expose our counters
 app.use('/stats', counters.router);
