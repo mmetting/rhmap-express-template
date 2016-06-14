@@ -7,7 +7,7 @@
     "start": "env NODE_PATH=. FH_USE_LOCAL_DB=true nodemon application.js | bunyan",
     "jshint": "jshint lib/**/*.js",
     "analysis": "plato -d analysis $(find ./lib -name \"*.js\" -not -name \"*.test.js\")",
-    "test": "npm run-script jshint && npm run-script coverage && npm run-script check-coverage",
+    "test": "npm run-script jshint && npm run unit && npm run-script coverage && npm run-script check-coverage",
     "coverage": "env NODE_PATH=. NODE_ENV=test istanbul cover -x *.test.js _mocha $(find ./lib -name \"*.test.js\")",
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "unit": "env NODE_PATH=. NODE_ENV=test _mocha $(find ./lib -name \"*.test.js\")"
