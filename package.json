@@ -31,10 +31,10 @@
   },
   "homepage": "https://github.com/evanshortiss/rhmap-express-template",
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4",
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
     "fh-bunyan": "^0.1.3",
-    "fh-mbaas-api": "5.13.1",
+    "fh-mbaas-api": "5.13.4",
     "lodash": "^4.6.1",
     "safejson": "^1.0.1",
     "verror": "^1.6.1"
