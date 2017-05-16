@@ -33,7 +33,8 @@ curl -X POST --data '{"lastname":"linux"}' -H "Content-Type:application/json" ht
 ```
 
 And now call this to see the change was saved:
-````
+
+```
 curl http://127.0.0.1:8001/users/0
 ```
 
