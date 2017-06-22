@@ -12,10 +12,10 @@ deployment:
   test:
    branch: test
    commands:
-     - npm i -g fh-fhc@2.16.3-493
-     - git remote add fh $FH_GIT_URL
-     - git fetch --unshallow
-     - git push fh refs/heads/test
-     - fhc target $FH_DOMAIN
-     - fhc login $FH_USER_TEST $FH_PASS_TEST
-     - fhc app stage --app=$FH_CLOUD_APP_ID --env=demos-test --runtime=node4 --clean=true --gitRef.type=branch --gitRef.hash=HEAD --gitRef.value=test
+    - npm i -g fh-fhc@2.16.3-493
+    - git remote add fh $FH_GIT_URL
+    - git fetch --unshallow
+    - git push fh refs/heads/test
+    - fhc target $FH_DOMAIN
+    - fhc login $FH_USER_TEST $FH_PASS_TEST
+    - fhc app stage --app=$FH_CLOUD_APP_ID --env=demos-test --runtime=node4 --clean=true --gitRef.type=branch --gitRef.hash=HEAD --gitRef.value=test
