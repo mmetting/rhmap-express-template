@@ -9,6 +9,9 @@ var express = require('express')
 
 log.info('starting application');
 
+// Enable CORS for all requests
+app.use(cors());
+
 // Note: the order which we add middleware to Express here is important!
 app.use('/sys', mbaasExpress.sys([]));
 app.use('/mbaas', mbaasExpress.mbaas);
