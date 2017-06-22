@@ -6,3 +6,4 @@ coverage
 ._.DS_Store
 *.log
 analysis
+Icon?
