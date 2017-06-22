@@ -1,5 +1,5 @@
 # Red Hat Mobile Cloud Application Template
-[![Circle CI](https://circleci.com/gh/evanshortiss/rhmap-express-template/tree/master.svg?style=svg)](https://circleci.com/gh/evanshortiss/rhmap-express-template/tree/master)
+[![Circle CI](https://circleci.com/gh/mmetting/rhmap-express-template/tree/master.svg?style=svg)](https://circleci.com/gh/evanshortiss/rhmap-express-template/tree/master)
 
 ## Overview
 This is a template express application that utilises the RHMAP (Red Hat Mobile
